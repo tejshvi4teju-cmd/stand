@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STAND Login</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-blur one"></div>
+  <div class="background-blur two"></div>
+
+  <div class="login-container">
+
+    <div class="NAME">STAND</div>
+
+    <form class="glass-box" id="loginForm">
+
+      <div class="message" id="errorBox">
+        Please enter your details
+      </div>
+
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="name"
+        required
+      >
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="password"
+        required
+      >
+
+      <button type="submit">
+        Log in
+      </button>
+
+    </form>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

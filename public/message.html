@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>STAND Chat</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="chat-body">
+
+  <!-- TOP -->
+
+  <div class="top">
+
+    <h1>STAND</h1>
+
+    <div class="online" id="onlineBox">
+      Online Users
+    </div>
+
+    <div class="typing" id="typingBox"></div>
+
+  </div>
+
+  <!-- CHAT -->
+
+  <div
+    class="chat-area"
+    id="chatArea"
+  ></div>
+
+  <!-- INPUT -->
+
+  <div class="input-box">
+
+    <label class="image-btn">
+
+      📷
+
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        hidden
+      >
+
+    </label>
+
+    <input
+      type="text"
+      id="msgInput"
+      placeholder="Type message..."
+    >
+
+    <button id="sendBtn">
+      Send
+    </button>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
