@@ -17,7 +17,7 @@ const io =
 // PASSWORD
 
 const CHAT_PASSWORD =
-    "998899";
+    "english";
 
 // MIDDLEWARE
 
@@ -28,6 +28,14 @@ app.use(express.json({
 app.use(
     express.static("public")
 );
+app.get("/", (req,res) => {
+
+    res.sendFile(
+        __dirname +
+        "/public/login.html"
+    );
+
+});
 
 // PORT
 
